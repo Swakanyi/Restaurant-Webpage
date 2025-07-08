@@ -6,13 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu - Dine with CEE</title>
     <style>
+        header{
+            background-color: rgb(71, 121, 136);
+            padding: 20px;
+        }
+        nav{background-color: rgb(71, 121, 136);
+            color: white;
+         }
+         nav a:hover{
+            color: aquamarine;
+         }
         body {
             text-align: center;
-            background-image: url(pexels-rajesh-tp-749235-1633525.jpg);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto 30px;
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 12px
+        }
+        .starters{
+            background-image: url(pexels-gabriel-lima-865460-15735983.jpg);
+            background-size: 360px 320px;
             background-repeat: no-repeat;
-            background-size: cover;
             background-position: center;
-            color: azure;
+            padding: 40px 20px;
+            color: white;
+
+        }
+        .Main{
+            background-image: url(pexels-saveurssecretes-5476229.jpg);
+            background-size: 400px 350px;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 40px 20px;
+            color: white;
+
+        }
+        
+            
+            footer{
+            background-color: rgb(71, 121, 136);
+            color: white;
+            padding: 10px;
+        
+        }
+        footer a{
+            text-decoration: none;
+            color: white;
+
+        }
+        footer a:hover{
+            color: aquamarine;
         }
     </style>
 </head>
@@ -20,7 +68,7 @@
 <body>
 
     <header>
-        <h1 style="background-color: bisque;">Dine with CE&E</h1>
+        <h1>Dine with CE&E</h1>
         <nav>
             <a href="index.html">Homepage</a>
             <a href="menu.html">Menu</a>
@@ -31,11 +79,13 @@
     </header>
 
     <main>
-        <div>
-            <h2>Our Menu - Dine with CE&E</h2>
-            <h2>Starters</h2>
+    
+        <h2>Our Menu - Dine with CE&E</h2>
+        
             <table>
-                <tr>
+                <div class="starters">
+                   <h2>Starters</h2>
+                    <tr>
                     <th>Item</th>
                     <th>Description</th>
                     <th>Price</th>
@@ -60,11 +110,12 @@
                     <td>Fresh mozzarella, tomatoes & basil with balsamic glaze</td>
                     <td>Ksh 600</td>
                 </tr>
+                </div>
 
             </table>
             <br>
             <table>
-                <div>
+                <div class="Main">
                     <h2>Main Courses</h2>
                     <tr>
                         <th>Item</th>
@@ -94,8 +145,9 @@
                 </div>
             </table>
             <br>
-            <h2>Desserts</h2>
-            <table>
+            <div class="desserts">
+               <h2>Desserts</h2>
+               <table>
                 <tr>
                     <th>Item</th>
                     <th>Description</th>
@@ -121,9 +173,12 @@
                     <td>Seasonal fresh fruits served chilled</td>
                     <td>Ksh 500</td>
                 </tr>
+            </div>
+            
             </table>
             <br>
-            <h2>Non-Alcoholic Drinks</h2>
+            <div class="non-alcoholic drinks">
+                <h2>Non-Alcoholic Drinks</h2>
             <table>
                 <tr>
                     <th>Item</th>
@@ -151,6 +206,9 @@
                     <td>Ksh 200</td>
                 </tr>
             </table>
+
+            </div>
+            
             <br>
             <h2>Alcoholic Drinks</h2>
             <table>
